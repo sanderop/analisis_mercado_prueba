@@ -43,11 +43,14 @@ El dataset presenta 28 valores nulos en Nombre_del_cliente y 1 Ventas, Cantidad,
 
 Cálculo de asimetría de las columnas:
 
-Asimetría de Ventas: 8.1380
-Asimetría de Cantidad: 1.3604
-Asimetría de Descuento: 1.3877
-Asimetría de Ganancia: 4.1581
-Asimetría de Costo_de_envío: 5.8632
+- Asimetría de Ventas: 8.1380
+- Asimetría de Cantidad: 1.3604
+- Asimetría de Descuento: 1.3877
+- Asimetría de Ganancia: 4.1581
+- Asimetría de Costo_de_envío: 5.8632
+
+![Distribución columnas](assets/figures/01_exploratory/04_distribuciones.png)
+
 
 Se sustituirán los valores nulos con la mediana del conjunto de datos, dado que los datos presentan gran dispersión, mostrando una diferencia significativa entre los mínimos y máximos, lo que se refleja en una distribución poco uniforme, con valores de asimetría diferentes de 1.
 
@@ -61,6 +64,7 @@ La distribución de los datos se encuentran entre el año 2021 y 2024. Existen d
 - **Métricas adicionales**: 
 Se añaden métricas de Margen_beneficio, Precio_unitario y Ventas_netas.
 ![Matriz Correlación](assets/figures/01_exploratory/02_matriz_correlacion.png)
+
 Se realiza la matriz para identificar la correlación de las nuevas métricas añadidas. Revelando que Margen_beneficio tiene relación inversa fuerte con los descuentos, el precio unitario relación directa con el precio y precio_unitario, y las ventas_netas tiene una relación directa con ganancia y costo_de_envio.
 
 ## 2. Análisis Temporal y Pronóstico de Ventas
